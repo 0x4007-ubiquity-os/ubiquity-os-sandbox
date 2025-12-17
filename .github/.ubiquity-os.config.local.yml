@@ -179,20 +179,8 @@ plugins:
         evmPrivateEncrypted: "gdo_iiUND1poZaibNme5oUsG1g8RDEmtI41uLgZjxW8WwxnQZb0DHkOBcISuwobxyKEyzeGQC9KzjkWXv0_OCv-kuUHy4myWNIhs4j3odyvh1XUP7pZFeuVEiASmKQBGkzlKRii5dA0liXtHnhciZQi5N8E7-cdOMbA"
         # erc20RewardToken: "0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d"
       incentives:
-        requirePriceLabel: true
-        limitRewards: true
-        collaboratorOnlyPaymentInvocation: true
-        contentEvaluator:
-          multipliers:
-            - role:
-                - ISSUE_SPECIFICATION
-              relevance: 1
-        externalContent: {}
-        userExtractor:
-          redeemTask: true
         dataPurge:
           skipCommentsWhileAssigned: "exact"
-        reviewIncentivizer: {}
         formattingEvaluator:
           multipliers:
             - role:
@@ -225,13 +213,8 @@ plugins:
               rewards:
                 wordValue: 0
                 html: *tcrHtmlConfig
-        permitGeneration: {}
-        simplificationIncentivizer: {}
         payment:
           automaticTransferMode: false
-        githubComment:
-          post: true
-          debug: false
       dataCollection:
         maxAttempts: 10
         delayMs: 1000
