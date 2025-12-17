@@ -183,14 +183,11 @@ plugins:
         limitRewards: true
         collaboratorOnlyPaymentInvocation: true
         contentEvaluator:
-          openAi: {}
           multipliers:
             - role:
                 - ISSUE_SPECIFICATION
               relevance: 1
-        externalContent:
-          llmImageModel: {}
-          llmWebsiteModel: {}
+        externalContent: {}
         userExtractor:
           redeemTask: true
         dataPurge:
