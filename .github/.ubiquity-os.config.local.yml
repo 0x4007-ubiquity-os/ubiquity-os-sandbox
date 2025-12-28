@@ -70,10 +70,10 @@ tcrHtmlConfig: &tcrHtmlConfig
     score: 0.1
     countWords: true
 plugins:
-  ubiquity-os-marketplace/command-ask@development:
-  ubiquity-os-marketplace/command-ping@development:
-  ubiquity-os-marketplace/command-smoke:
-  ubiquity-os-marketplace/command-config@feat/ubiquity-ai:
+  ubiquity-os-marketplace/command-ask@codex/concurrent-20251222:
+  ubiquity-os-marketplace/command-ping@codex/concurrent-20251222:
+  ubiquity-os-marketplace/command-smoke@codex/concurrent-20251222:
+  ubiquity-os-marketplace/command-config@codex/concurrent-20251222:
   https://command-query-development.deno.dev:
     with:
       allowPublicQuery: true
@@ -120,7 +120,7 @@ plugins:
   https://command-wallet-development.deno.dev:
     with:
       registerWalletWithVerification: false
-  ubiquity-os-marketplace/daemon-disqualifier@development:
+  ubiquity-os-marketplace/daemon-disqualifier@codex/concurrent-20251222:
     with:
       warning: 7 days
       eventWhitelist:
@@ -138,7 +138,7 @@ plugins:
       disqualification: 14 days
       prioritySpeed: true
       pullRequestRequired: true
-  ubiquity-os-marketplace/daemon-merging@development:
+  ubiquity-os-marketplace/daemon-merging@codex/concurrent-20251222:
     with:
       approvalsRequired:
         collaborator: 1
@@ -167,8 +167,8 @@ plugins:
         excludeRepos: []
       shouldFundContributorClosedIssue: false
 
-  ubiquity-os-marketplace/personal-agent-bridge@development:
-  ubiquity-os-marketplace/text-conversation-rewards@feat/ubiquity-ai:
+  ubiquity-os-marketplace/personal-agent-bridge@codex/concurrent-20251222:
+  ubiquity-os-marketplace/text-conversation-rewards@codex/concurrent-20251222:
     with:
       rewards:
         evmNetworkId: 100
@@ -220,7 +220,7 @@ plugins:
       dedupeWarningThreshold: 0.75
       jobMatchingThreshold: 0.8
       alwaysRecommend: 0
-  ubiquity-os-marketplace/daemon-spec-rewriter@feat/ubiquity-ai:
+  ubiquity-os-marketplace/daemon-spec-rewriter@codex/concurrent-20251222:
 
   https://daemon-xp-development.deno.dev:
 
