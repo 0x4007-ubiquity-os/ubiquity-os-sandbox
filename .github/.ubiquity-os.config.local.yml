@@ -214,7 +214,7 @@ plugins:
       dataCollection:
         maxAttempts: 10
         delayMs: 1000
-  ubiquity-os-marketplace/text-vector-embeddings@feat/ubiquity-ai:
+  http://127.0.0.1:4004:
     with:
       dedupeMatchThreshold: 0.95
       dedupeWarningThreshold: 0.75
