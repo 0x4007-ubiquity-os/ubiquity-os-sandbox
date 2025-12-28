@@ -74,6 +74,8 @@ plugins:
   ubiquity-os-marketplace/command-ping@codex/concurrent-20251222:
   ubiquity-os-marketplace/command-smoke@codex/concurrent-20251222:
   ubiquity-os-marketplace/command-config@codex/concurrent-20251222:
+    with:
+      autoMerge: true
   https://command-query-development.deno.dev:
     with:
       allowPublicQuery: true
