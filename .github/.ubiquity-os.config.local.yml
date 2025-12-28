@@ -70,9 +70,6 @@ tcrHtmlConfig: &tcrHtmlConfig
     score: 0.1
     countWords: true
 plugins:
-  ubiquity-os-marketplace/command-ask@codex/concurrent-20251222:
-  ubiquity-os-marketplace/command-ping@codex/concurrent-20251222:
-  ubiquity-os-marketplace/command-smoke@codex/concurrent-20251222:
   ubiquity-os-marketplace/command-config@codex/concurrent-20251222:
     with:
       autoMerge: true
@@ -216,7 +213,7 @@ plugins:
       dataCollection:
         maxAttempts: 10
         delayMs: 1000
-  http://127.0.0.1:4004:
+  ubiquity-os-marketplace/text-vector-embeddings@codex/concurrent-20251222:
     with:
       dedupeMatchThreshold: 0.95
       dedupeWarningThreshold: 0.75
